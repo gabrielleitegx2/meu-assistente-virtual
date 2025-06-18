@@ -1,20 +1,20 @@
-# Use imagem oficial do Python
+# Imagem base
 FROM python:3.11-slim
 
-# Diretório de trabalho no container
+# Diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copia apenas os arquivos necessários primeiro para aproveitar cache de dependências
-COPY ./deploy/requirements.txt .
+# Copia os arquivos de requirements
+COPY deploy/requirements.txt .
 
 # Instala as dependências
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia o restante da aplicação
+# Copia todo o código da aplicação para o container
 COPY . .
 
-# Expõe a porta do FastAPI (por padrão é 8000)
-EXPOSE 8000
+# Define a porta que será exposta (opcional, Render detecta automaticamente)
+EXPOSE 10000
 
-# Comando para iniciar o servidor
-CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8000"]
+# Comando para iniciar a aplicação FastAPI com uvicorn
+CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "10000"]
