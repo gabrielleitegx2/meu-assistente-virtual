@@ -1,0 +1,22 @@
+# Backend Web Framework
+fastapi
+uvicorn
+
+# OpenAI API
+openai
+
+# LangChain e dependências relacionadas
+langchain
+langchain-community
+langchain-openai
+tiktoken
+faiss-cpu
+
+# Utilitários
+python-dotenv
+
+# Template Engine (para o HTML com Jinja2)
+jinja2
+
+# Tipagem
+pydantic

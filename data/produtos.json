@@ -1,0 +1,40 @@
+[
+  {
+    "id": "PROD001",
+    "nome": "Notebook Dell Inspiron 15",
+    "categoria": "Eletrônicos",
+    "preco": 2899.99,
+    "descricao": "Notebook ideal para trabalho e estudos.",
+    "especificacoes": {
+      "tela": "15.6 polegadas",
+      "processador": "Intel i5",
+      "memoria": "8GB RAM"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD002",
+    "nome": "Smartphone Samsung Galaxy A14",
+    "categoria": "Celulares",
+    "preco": 1399.00,
+    "descricao": "Celular com tela grande e excelente bateria.",
+    "especificacoes": {
+      "tela": "6.6 polegadas",
+      "processador": "Octa-Core",
+      "memoria": "4GB RAM"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD003",
+    "nome": "Fone de Ouvido Bluetooth JBL",
+    "categoria": "Acessórios",
+    "preco": 299.90,
+    "descricao": "Fone com som potente e bateria de longa duração.",
+    "especificacoes": {
+      "tipo": "Over-Ear",
+      "conectividade": "Bluetooth 5.0"
+    },
+    "disponivel": false
+  }
+]
