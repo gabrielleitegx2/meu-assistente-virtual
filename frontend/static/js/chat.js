@@ -8,10 +8,10 @@ async function enviarPergunta() {
 
     try {
         // URL PARA USAR LOCAL
-        // const resposta = await fetch('http://127.0.0.1:8000/perguntar', { 
+         const resposta = await fetch('http://127.0.0.1:8000/perguntar', { 
 
         // URL PARA USAR PRODUÇAO
-        const resposta = await fetch('https://meu-assistente-virtual-n74d.onrender.com/perguntar', {
+        //const resposta = await fetch('https://meu-assistente-virtual-n74d.onrender.com/perguntar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
